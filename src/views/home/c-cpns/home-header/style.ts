@@ -10,9 +10,8 @@ export const HeaderWrapper = styled.div`
   background-color: ${(props) => props.theme.backgroundColor.header};
 
   .title {
-    width: 100%;
     height: 100%;
-    flex: 1;
+    display: flex;
 
     .logo {
       display: flex;
@@ -21,10 +20,10 @@ export const HeaderWrapper = styled.div`
       width: 100%;
       height: 100%;
       img {
-        height: 90%;
+        height: 60%;
       }
       h1 {
-        margin-left: 4px;
+        margin-left: 12px;
         font-size: 24px;
         color: ${(props) => props.theme.text.main};
       }
@@ -32,6 +31,41 @@ export const HeaderWrapper = styled.div`
   }
 
   .options {
+    display: flex;
     justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+
+    @font-face {
+      font-family: 'iconfont';
+      src: url(${require('@/assets/iconfont/iconfont.woff2?t=1678198418515')})
+          format('woff2'),
+        url(${require('@/assets/iconfont/iconfont.woff?t=1678198418515')})
+          format('woff'),
+        url(${require('@/assets/iconfont/iconfont.ttf?t=1678198418515')})
+          format('truetype');
+    }
+    .iconfont {
+      font-family: 'iconfont' !important;
+      font-size: 17px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .left {
+      box-sizing: border-box;
+      padding-right: 0.8rem;
+      border-right: 1.5px solid #363636;
+    }
+
+    .right {
+      margin-left: 0.8rem;
+    }
+
+    .item {
+      margin: 0.8rem;
+      color: ${(props) => props.theme.text.main};
+    }
   }
 `
