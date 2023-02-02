@@ -1,9 +1,11 @@
 import React, { memo } from 'react'
 import type { FC, ReactNode } from 'react'
+import { ThemeProvider } from 'styled-components'
 import { HomeWrapper } from './style'
-import HomeHeader from '@/components/home-header'
-import HomeContent from '@/components/home-content'
-import HomeFooter from '@/components/home-footer'
+import HomeHeader from '@/views/home/c-cpns/home-header'
+import HomeContent from '@/views/home/c-cpns/home-content'
+import HomeFooter from '@/views/home/c-cpns/home-footer'
+import { dark } from '@/assets/theme'
 
 interface IProps {
   children?: ReactNode
@@ -11,11 +13,13 @@ interface IProps {
 
 const Home: FC<IProps> = () => {
   return (
-    <HomeWrapper>
-      <HomeHeader></HomeHeader>
-      <HomeContent></HomeContent>
-      <HomeFooter></HomeFooter>
-    </HomeWrapper>
+    <ThemeProvider theme={dark}>
+      <HomeWrapper>
+        <HomeHeader theme={dark} />
+        <HomeContent />
+        <HomeFooter />
+      </HomeWrapper>
+    </ThemeProvider>
   )
 }
 
