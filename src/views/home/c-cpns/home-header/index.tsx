@@ -20,33 +20,33 @@ const HomeHeader: FC<IProps> = () => {
       </div>
       <div className="options">
         <div className="left">
-          <a href="/" className="item">
+          <a href="/home" className="item">
             University
           </a>
-          <a href="/" className="item">
+          <a href="/home" className="item">
             Project
           </a>
-          <a href="/" className="item">
+          <a href="/home" className="item">
             Notes
           </a>
-          <a href="/" className="item">
+          <a href="/home" className="item">
             Skill
           </a>
-          <a href="/" className="item">
+          <a href="/home" className="item">
             About
           </a>
-          <a href="/" className="item iconfont">
+          <a href="/home" className="item iconfont">
             &#xe6a4;
           </a>
         </div>
         <div className="right">
-          <a href="/" className="item iconfont">
+          <a href="/home" className="item iconfont">
             &#xe609;
           </a>
-          <a href="/" className="item iconfont">
+          <a href="/home" className="item iconfont">
             &#xe65b;
           </a>
-          <a href="/" className="item iconfont">
+          <a href="/home" className="item iconfont">
             &#xe60a;
           </a>
         </div>

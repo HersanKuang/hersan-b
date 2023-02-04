@@ -10,7 +10,8 @@ const light = {
     body: '#fff'
   },
   text: {
-    main: '#161209'
+    main: '#161209',
+    headerHover: '#2d96bd'
   }
 }
 
@@ -23,6 +24,7 @@ export const dark = {
     body: '#292a2d'
   },
   text: {
-    main: '#a9a9b3'
+    main: '#a9a9b3',
+    headerHover: '#fff'
   }
 }

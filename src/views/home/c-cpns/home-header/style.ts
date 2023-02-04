@@ -66,6 +66,9 @@ export const HeaderWrapper = styled.div`
     .item {
       margin: 0.8rem;
       color: ${(props) => props.theme.text.main};
+      &:hover {
+        color: ${(props) => props.theme.text.headerHover};
+      }
     }
   }
 `
