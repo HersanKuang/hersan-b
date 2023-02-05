@@ -40,15 +40,9 @@ const HomeHeader: FC<IProps> = () => {
           </a>
         </div>
         <div className="right">
-          <a href="/home" className="item iconfont">
-            &#xe609;
-          </a>
-          <a href="/home" className="item iconfont">
-            &#xe65b;
-          </a>
-          <a href="/home" className="item iconfont">
-            &#xe60a;
-          </a>
+          <span className="item iconfont">&#xe609;</span>
+          <span className="item iconfont">&#xe65b;</span>
+          <span className="item iconfont">&#xe60a;</span>
         </div>
       </div>
     </HeaderWrapper>

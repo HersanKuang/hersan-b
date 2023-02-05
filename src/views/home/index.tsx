@@ -5,7 +5,7 @@ import { HomeWrapper } from './style'
 import HomeHeader from '@/views/home/c-cpns/home-header'
 import HomeContent from '@/views/home/c-cpns/home-content'
 import HomeFooter from '@/views/home/c-cpns/home-footer'
-import { dark } from '@/assets/theme'
+import { dark, light } from '@/assets/theme'
 
 interface IProps {
   children?: ReactNode
@@ -13,11 +13,11 @@ interface IProps {
 
 const Home: FC<IProps> = () => {
   return (
-    <ThemeProvider theme={dark}>
+    <ThemeProvider theme={light}>
       <HomeWrapper>
-        <HomeHeader theme={dark} />
-        <HomeContent />
-        <HomeFooter />
+        <HomeHeader theme={light} />
+        <HomeContent theme={light} />
+        <HomeFooter theme={light} />
       </HomeWrapper>
     </ThemeProvider>
   )

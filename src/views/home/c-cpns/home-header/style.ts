@@ -8,6 +8,7 @@ export const HeaderWrapper = styled.div`
   box-sizing: border-box;
   height: ${(props) => props.theme.height.header};
   background-color: ${(props) => props.theme.backgroundColor.header};
+  z-index: 9;
 
   .title {
     height: 100%;
@@ -61,6 +62,9 @@ export const HeaderWrapper = styled.div`
 
     .right {
       margin-left: 0.8rem;
+      .item {
+        cursor: pointer;
+      }
     }
 
     .item {
