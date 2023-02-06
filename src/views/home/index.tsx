@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo, useState } from 'react'
 import type { FC, ReactNode } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { HomeWrapper } from './style'
@@ -12,12 +12,17 @@ interface IProps {
 }
 
 const Home: FC<IProps> = () => {
+  const [switchTheme, setSwitchTheme] = useState(false)
+  setTimeout(() => {
+    setSwitchTheme(!switchTheme)
+  }, 5000)
+
   return (
-    <ThemeProvider theme={light}>
+    <ThemeProvider theme={switchTheme ? dark : light}>
       <HomeWrapper>
-        <HomeHeader theme={light} />
-        <HomeContent theme={light} />
-        <HomeFooter theme={light} />
+        <HomeHeader theme={switchTheme ? dark : light} />
+        <HomeContent theme={switchTheme ? dark : light} />
+        <HomeFooter theme={switchTheme ? dark : light} />
       </HomeWrapper>
     </ThemeProvider>
   )
