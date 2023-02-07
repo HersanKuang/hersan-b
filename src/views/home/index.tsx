@@ -20,9 +20,9 @@ const Home: FC<IProps> = () => {
   return (
     <ThemeProvider theme={switchTheme ? dark : light}>
       <HomeWrapper>
-        <HomeHeader theme={switchTheme ? dark : light} />
-        <HomeContent theme={switchTheme ? dark : light} />
-        <HomeFooter theme={switchTheme ? dark : light} />
+        <HomeHeader />
+        <HomeContent />
+        <HomeFooter />
       </HomeWrapper>
     </ThemeProvider>
   )

@@ -1,6 +1,3 @@
-export type L = typeof light
-export type D = typeof dark
-
 export const light = {
   height: {
     header: '3.5rem'
