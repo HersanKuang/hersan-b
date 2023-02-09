@@ -10,11 +10,13 @@ export const light = {
     main: '#161209',
     headerHover: '#2d96bd'
   },
-  mixins: `position: relative;
-  top: 3.5rem;
-  left: 0;
-  right: 0;
-  bottom: 0;`
+  mixins: `
+    position: relative;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  `
 }
 
 export const dark = {
@@ -29,9 +31,11 @@ export const dark = {
     main: '#a9a9b3',
     headerHover: '#fff'
   },
-  mixins: `position: relative;
-  top: 3.5rem;
-  left: 0;
-  right: 0;
-  bottom: 0;`
+  mixins: `
+    position: relative;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  `
 }

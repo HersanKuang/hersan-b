@@ -4,9 +4,11 @@ import { HeaderWrapper } from './style'
 
 interface IProps {
   children?: ReactNode
+  handleSwitchTheme: () => void
 }
 
-const HomeHeader: FC<IProps> = () => {
+const AppHeader: FC<IProps> = (props) => {
+  const { handleSwitchTheme } = props
   return (
     <HeaderWrapper>
       <div className="title">
@@ -39,7 +41,9 @@ const HomeHeader: FC<IProps> = () => {
         </div>
         <div className="right">
           <span className="item iconfont">&#xe609;</span>
-          <span className="item iconfont">&#xe65b;</span>
+          <span className="item iconfont" onClick={handleSwitchTheme}>
+            &#xe65b;
+          </span>
           <span className="item iconfont">&#xe60a;</span>
         </div>
       </div>
@@ -47,4 +51,4 @@ const HomeHeader: FC<IProps> = () => {
   )
 }
 
-export default memo(HomeHeader)
+export default memo(AppHeader)
