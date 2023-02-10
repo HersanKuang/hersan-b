@@ -13,9 +13,7 @@ const HomeContent: FC<IProps> = () => {
   }
   return (
     <ContentWrapper>
-      {arr.map((item, index) => (
-        <div key={index}>{item}</div>
-      ))}
+      <div className="main"></div>
     </ContentWrapper>
   )
 }
