@@ -35,7 +35,10 @@ const AppHeader: FC<IProps> = (props) => {
           <a href="/home" className="item">
             About
           </a>
-          <a href="/home" className="item iconfont">
+          <a
+            href="https://github.com/HersanKuang/hersan-blog"
+            className="item iconfont"
+          >
             &#xe6a4;
           </a>
         </div>
