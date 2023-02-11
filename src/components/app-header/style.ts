@@ -37,23 +37,6 @@ export const HeaderWrapper = styled.div`
     align-items: center;
     flex: 1;
 
-    @font-face {
-      font-family: 'iconfont';
-      src: url(${require('@/assets/iconfont/iconfont.woff2?t=1678198418515')})
-          format('woff2'),
-        url(${require('@/assets/iconfont/iconfont.woff?t=1678198418515')})
-          format('woff'),
-        url(${require('@/assets/iconfont/iconfont.ttf?t=1678198418515')})
-          format('truetype');
-    }
-    .iconfont {
-      font-family: 'iconfont' !important;
-      font-size: 17px;
-      font-style: normal;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
     .left {
       box-sizing: border-box;
       padding-right: 0.8rem;

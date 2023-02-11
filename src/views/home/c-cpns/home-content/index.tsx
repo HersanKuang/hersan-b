@@ -1,19 +1,16 @@
 import React, { memo } from 'react'
 import type { FC, ReactNode } from 'react'
 import { ContentWrapper } from './style'
+import UserInfo from '@/views/home/c-cpns/home-content/c-cpns/user-info'
 
 interface IProps {
   children?: ReactNode
 }
 
 const HomeContent: FC<IProps> = () => {
-  const arr: any[] = []
-  for (let i = 0; i < 80; i++) {
-    arr.push(i)
-  }
   return (
     <ContentWrapper>
-      <div className="main"></div>
+      <UserInfo />
     </ContentWrapper>
   )
 }

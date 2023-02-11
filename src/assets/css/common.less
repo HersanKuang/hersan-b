@@ -1,9 +1,3 @@
-:root {
-  --animate-duration: 1s;
-  --animate-delay: 1s;
-  --animate-repeat: 1;
-}
-
 html {
   width: 100%;
   font-size: 16px;
@@ -11,15 +5,30 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   ::selection {
-    background-color: rgba(53,166,247,0.25);
+    background-color: rgba(53, 166, 247, 0.25);
   }
 }
 
 body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Emoji, Helvetica,
-    Arial, sans-serif;
+  font-family: 'Consolas', 'Inconsolata', 'Menlo', 'Monaco', 'Source Code Pro',
+    'Fira Code', 'Roboto Mono', 'IBM Plex Mono', 'Anonymous Pro', 'Ubuntu Mono',
+    monospace;
   color: #484848;
   line-height: 1.15;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../iconfont/iconfont.woff2') format('woff2'),
+    url('../iconfont/iconfont.woff') format('woff'),
+    url('../iconfont/iconfont.ttf') format('truetype');
+}
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 17px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

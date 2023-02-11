@@ -11,7 +11,7 @@ function App() {
     setSwitchTheme(!switchTheme)
   }, [switchTheme])
   return (
-    <ThemeProvider theme={switchTheme ? dark : light}>
+    <ThemeProvider theme={switchTheme ? light : dark}>
       <div className="app">
         <AppHeader handleSwitchTheme={itemClick} />
         {useRoutes(routes)}
