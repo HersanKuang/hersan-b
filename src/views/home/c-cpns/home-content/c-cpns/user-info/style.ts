@@ -68,6 +68,9 @@ export const InfoWrapper = styled.div`
           font-size: 1.5rem;
           opacity: 0.9;
           color: ${(props) => props.theme.text.main};
+          &:hover {
+            color: ${(props) => props.theme.text.headerHover};
+          }
         }
         .item {
           font-size: 1.25rem !important;

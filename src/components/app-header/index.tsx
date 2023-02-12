@@ -24,7 +24,7 @@ const AppHeader: FC<IProps> = (props) => {
             University
           </a>
           <a href="/home" className="item">
-            Project
+            Handwritten
           </a>
           <a href="/home" className="item">
             Notes
