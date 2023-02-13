@@ -1,13 +1,6 @@
 import styled from 'styled-components'
 
 export const InfoWrapper = styled.div`
-  position: relative;
-  max-width: 800px;
-  width: 60%;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding-top: 2rem;
-
   .profile {
     display: flex;
     justify-content: flex-start;
@@ -37,7 +30,6 @@ export const InfoWrapper = styled.div`
         width: 42ch;
         margin: 0 auto;
         font: 600 20px 'Consolas', 'Inconsolata', monospace;
-        color: ${(props) => props.theme.text.main};
         border-right: 0.16rem solid;
         white-space: nowrap;
         overflow: hidden;

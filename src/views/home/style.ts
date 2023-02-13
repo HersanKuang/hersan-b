@@ -7,6 +7,7 @@ export const HomeWrapper = styled.div`
   right: 0;
   bottom: 0;
   overflow-y: auto;
+  background-color: ${(props) => props.theme.backgroundColor.body};
   ::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
