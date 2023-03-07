@@ -5,17 +5,13 @@ import App from './App'
 
 import 'normalize.css'
 import '@/assets/css/index.less'
-import theme from '@/assets/theme'
-import { ThemeProvider } from 'styled-components'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Suspense fallback="">
-        <ThemeProvider theme={theme}>
-          <App />
-        </ThemeProvider>
+        <App />
       </Suspense>
     </BrowserRouter>
   </React.StrictMode>
